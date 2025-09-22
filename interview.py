@@ -62,7 +62,7 @@ def main():
             second_number = int(input("Enter the second number: "))
             third_number = int(input("Enter the third number: "))
     
-            print(sum_of_three(num1, num2, num3))
+            print(sum_of_three(first_number, second_number, third_number))
             return
         case '-f':
             print("The factorial of a number")
@@ -98,12 +98,12 @@ def main():
                 return
         case 'help':
             print(
-                "List of commands:"
-                "-r: Takes in a string and reverses it"
-                "-a: Takes in three numbers and adds them together"
-                "-f: Return factorial of an inputed number"
-                "-s: Returns the nth entry of the fibonacci sequence"
-                "help: Prints this message"
+                "List of commands:\n"
+                "-r: Takes in a string and reverses it\n"
+                "-a: Takes in three numbers and adds them together\n"
+                "-f: Return factorial of an inputed number\n"
+                "-s: Returns the nth entry of the fibonacci sequence\n"
+                "help: Prints this message\n"
             )
             main()
         case _:
