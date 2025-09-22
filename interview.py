@@ -58,10 +58,14 @@ def main():
             print(reverse_string(s))
         case '-a':
             print("The sum of three numbers")
-            first_number = int(input("Enter the first number: "))
-            second_number = int(input("Enter the second number: "))
-            third_number = int(input("Enter the third number: "))
-    
+            try:
+                first_number = int(input("Enter the first number: "))
+                second_number = int(input("Enter the second number: "))
+                third_number = int(input("Enter the third number: "))
+            except ValueError:
+                print("Not an integer") 
+                return
+            
             print(sum_of_three(first_number, second_number, third_number))
             return
         case '-f':
