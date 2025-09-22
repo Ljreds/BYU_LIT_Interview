@@ -21,7 +21,7 @@ def recursive_factorial(num):
         return 1
     else:
         # Recursive step: multiply n by factorial of (n - 1)
-        factorial = num * re_fact(num - 1)
+        factorial = num * recursive_factorial(num - 1)
     
     return factorial
 
