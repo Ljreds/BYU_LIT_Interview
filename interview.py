@@ -81,16 +81,15 @@ def main():
                 return
         case '-s':
             print("The Nth entry of the fibonacci sequence")
-            fibonacci_number = int(input("Enter a positive number: "))
 
             try:
-                fibonacci_number = int(input("Enter a positve number: "))
+                fibonacci_number = int(input("Enter a positive number: "))
             except ValueError:
                 # Catches an error caused by invalid integer input
                 print("Not an integer") 
                 return
             
-            if(factorial_number < 0):
+            if(fibonacci_number < 0):
                 print("That is not a positive number")
                 return
             else:
